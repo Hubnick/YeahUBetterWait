@@ -19,9 +19,9 @@ var characters = [
   {
     routeName: "yoda",
     name: "Yoda",
-    role: "Jedi Master",
-    age: 900,
-    forcePoints: 2000
+    phone: "1234 Swampy Place",
+    email: "DoOrDoNot@thereisnothink.com",
+    uniqueID: 900
   },
   {
     routeName: "darthmaul",
