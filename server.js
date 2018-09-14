@@ -43,20 +43,20 @@ var characters = [
 // =============================================================
 
 // Basic route that sends the user first to the AJAX Page
-app.get("/", function(req, res) {
-  res.sendFile(path.join(__dirname, "view.html"));
+app.get("/1home", function(req, res) {
+  res.sendFile(path.join(__dirname, "1home.html"));
 });
 
-app.get("/add", function(req, res) {
-  res.sendFile(path.join(__dirname, "add.html"));
+app.get("/1makereservation", function(req, res) {
+  res.sendFile(path.join(__dirname, "1makereservation.html"));
 });
 
-app.get("/all", function(req, res) {
-  res.sendFile(path.join(__dirname, "all.html"));
+app.get("/1viewtables", function(req, res) {
+  res.sendFile(path.join(__dirname, "1viewtables.html"));
 });
 
 // Displays all characters
-app.get("/api/characters", function(req, res) {
+app.get("/api/reservations", function(req, res) {
   return res.json(characters);
 });
 
